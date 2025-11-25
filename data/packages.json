@@ -1,0 +1,6 @@
+[
+    {"id":"voorjaar", "naam":"Voorjaarspakket", "omschrijving":"Een pakket voor het voorjaar met diverse planten, zaden en verzorging van de tuin.", "prijs":49.99},
+    {"id":"zomer", "naam":"Zomerpakket", "omschrijving":"Een pakket voor de zomer met kleurrijke bloemen, zaden en tips voor een bloeiende tuin.", "prijs":59.99},
+    {"id":"herfst", "naam":"Herfstpakket", "omschrijving":"Een pakket voor de herfst met planten die goed gedijen in het najaar, zaden en opruimen van de tuin.", "prijs":54.99},
+    {"id":"winter", "naam":"Winterpakket", "omschrijving":"Een pakket voor de winter met winterharde planten, zaden en advies voor tuinonderhoud in koude maanden.", "prijs":64.99}
+]

@@ -1,0 +1,48 @@
+/* 1. Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header{
+    text-align: center;;
+    border-bottom: 1px solid;
+    button{
+        float: right;
+    }
+    
+}
+
+h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+div.VoorjaarsPakket{
+    box-sizing: border-box;
+    display: flex;
+    align-items: left;
+    border: 2px solid green;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+div.ZomerPakket{
+    box-sizing: border-box;
+    display: flex;
+    align-items: right;
+    border: 2px solid yellow;
+    padding: 10px;
+    margin: 10px;
+
+}
