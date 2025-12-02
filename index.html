@@ -6,41 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Groen-Gewoon-Doen</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="JS/main.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Groen-Gewoon-Doen</h1>
         <button>Login</button>
+        <h1>Groen-Gewoon-Doen</h1>
+        
     </header>
     <main>
         <h1>Standaard pakketten</h1>
-            <div id="VoorjaarPakket">
+        <div class="packages-grid">
+            <div class="VoorjaarsPakket">
             <h2>Voorjaarspakket</h2>
-            <a rel="VoorjaarFoto" href="images/voorjaarspakket.jpg"><img src="images/voorjaarspakket.jpg" alt="Voorjaarspakket"></a>
+            <a rel="VoorjaarFoto" href="Images/Voorjaar.PNG"><img src="Images/Voorjaar.PNG" alt="Voorjaarspakket"></a>
             <p>Een pakket voor het voorjaar met diverse planten, zaden en verzorging van de tuin.</p>
             <p>Prijs: €49.99</p>
             </div>
 
-            <div id="ZomerPakket">
+            <div class="ZomerPakket">
             <h2>Zomerpakket</h2>
-            <a rel="ZomerFoto" href="images/zomerpakket.jpg"><img src="images/zomerpakket.jpg" alt="Zomerpakket"></a>
+            <a rel="ZomerFoto" href="Images/Zomer.PNG"><img src="Images/Zomer.PNG" alt="Zomerpakket"></a>
             <p>Een pakket voor de zomer met kleurrijke bloemen, zaden en tips voor een bloeiende tuin.</p>
             <p>Prijs: €59.99</p>
             </div>
 
-            <div id="HerfstPakket">
+            <div class="HerfstPakket">
             <h2>Herfstpakket</h2>
-            <a rel="HerfstFoto" href="images/herfstpakket.jpg"><img src="images/herfstpakket.jpg" alt="Herfstpakket"></a>
+            <a rel="HerfstFoto" href="Images/Herfst.PNG"><img src="Images/Herfst.PNG" alt="Herfstpakket"></a>
             <p>Een pakket voor de herfst met planten die goed gedijen in het najaar, zaden en opruimen van de tuin.</p>
             <p>Prijs: €54.99</p>
             </div>
-            <div id="WinterPakket">
+
+            <div class="WinterPakket">
             <h2>Winterpakket</h2>
-            <a rel="WinterFoto" href="images/winterpakket.jpg"><img src="images/winterpakket.jpg" alt="Winterpakket"></a>
+            <a rel="WinterFoto" href="Images/Winter.PNG"><img src="Images/Winter.PNG" alt="Winterpakket"></a>
             <p>Een pakket voor de winter met winterharde planten, zaden en advies voor tuinonderhoud in koude maanden.</p>
             <p>Prijs: €64.99</p>
             </div>
+        </div>
+        <h1>Aanpasbare Offerte</h1>
+        <button id="FormOfferte">Maak een Aanpasbare Offerte</button>
+
+        <!-- The Modal -->
+        <div id="quoteModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Aanpasbare Offerte Aanvragen</h2>
+                <form id="quoteForm">
+                    <label for="name">Naam:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="gardenSize">Tuin Grootte (in vierkante meters):</label>
+                    <input type="number" id="gardenSize" name="gardenSize" required>
+
+                    <label for="options">Extra Opties:</label>
+                    <textarea id="options" name="options" rows="4" placeholder="Beschrijf uw wensen..."></textarea>
+
+                    <button type="submit">Verzend Offerte</button>
+                </form>
+            </div>
+        </div>
+
+pijs per vierkante meter en extra opties toevoegen
     </main>
 
     <footer></footer>

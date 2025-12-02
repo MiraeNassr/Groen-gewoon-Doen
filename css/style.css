@@ -5,11 +5,25 @@
     box-sizing: border-box;
 }
 
+@keyframes wave {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 0% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
 body {
     line-height: 1.5;
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f4f4f4;
+    background: linear-gradient(to top, green, orange, yellow);
+    background-size: 400% 400%;
+    animation: wave 15s ease-in-out infinite;
 }
 
 header{
@@ -19,6 +33,7 @@ header{
         float: right;
     }
     
+    
 }
 
 h1{
@@ -27,22 +42,146 @@ h1{
 }
 
 
-div.VoorjaarsPakket{
-    box-sizing: border-box;
-    display: flex;
-    align-items: left;
-    border: 2px solid green;
-    padding: 10px;
-    margin: 10px;
-
+.packages-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px 0;
 }
 
-div.ZomerPakket{
+div.VoorjaarsPakket,
+div.ZomerPakket,
+div.HerstPakket,
+div.WinterPakket {
     box-sizing: border-box;
-    display: flex;
-    align-items: right;
-    border: 2px solid yellow;
-    padding: 10px;
-    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
 
+/* Uniform image sizing */
+.packages-grid img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 10px 0;
+    
+}
+
+div.VoorjaarsPakket {
+    border: 2px solid green;
+}
+
+div.ZomerPakket {
+    border: 2px solid yellow;
+}
+
+div.HerfstPakket {
+    border: 2px solid orange;
+}
+
+div.WinterPakket {
+    border: 2px solid blue;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#quoteForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#quoteForm label {
+    margin-top: 10px;
+}
+
+#quoteForm input,
+#quoteForm textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#quoteForm button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#quoteForm button:hover {
+    background-color: darkgreen;
+}
+
+/* Mobile responsiveness - single column on smaller screens */
+@media (max-width: 768px) {
+    .packages-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    div.VoorjaarsPakket,
+    div.ZomerPakket,
+    div.HerstPakket,
+    div.WinterPakket {
+        padding: 10px;
+    }
+
+    .packages-grid img {
+        height: 150px;
+        max-width: 250px;
+    }
+
+    .modal-content {
+        width: 90%;
+        margin: 20% auto;
+    }
+}
+
+.FormOfferte {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 20px auto;
 }

@@ -1,0 +1,8 @@
+{
+    "variable to store rates example": {
+        "standard_package_price_per_m2": 12.50,
+        "premium_package_price_per_m2": 20.00,
+        "luxury_package_price_per_m2": 30.00,
+        "seasonal_discount_rate": 0.10
+    }
+}
