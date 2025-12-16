@@ -1,0 +1,6 @@
+[
+    {"id": "001", "klant": "Jan de Vries", "pakket": "voorjaar", "datum": "2024-03-15", "status": "verzonden"},
+    {"id": "002", "klant": "Sophie Jansen", "pakket": "zomer", "datum": "2024-06-20", "status": "in behandeling"},
+    {"id": "003", "klant": "Kees Bakker", "pakket": "herfst", "datum": "2024-09-10", "status": "geleverd"},
+    {"id": "004", "klant": "Linda de Boer", "pakket": "winter", "datum": "2024-12-05", "status": "verzonden"}
+]
