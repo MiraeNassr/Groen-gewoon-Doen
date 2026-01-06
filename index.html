@@ -7,14 +7,34 @@
     <title>Groen-Gewoon-Doen</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="JS/main.js" defer></script>
+    <script src="JS/admin.js" defer></script>
 </head>
 
 <body>
     <header>
-        <button>Login</button>
+        <button id="AdminLogin">Login</button>
+
         <h1>Groen-Gewoon-Doen</h1>
-        
+
     </header>
+
+    <!-- Login Modal -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="loginClose">&times;</span>
+            <h2>Admin Login</h2>
+            <form id="loginForm">
+                <label for="username">Gebruikersnaam:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Wachtwoord:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
     <main>
         <h1>Standaard pakketten</h1>
         <div class="packages-grid">
@@ -47,6 +67,8 @@
             </div>
         </div>
         <h1>Aanpasbare Offerte</h1>
+        <strong>Geen standaard pakket dat bij u past? Vraag een aanpasbare offerte aan door op de knop hieronder te klikken. Vul uw wensen in en ontvang een offerte op maat!</strong>
+        <br>
         <button id="FormOfferte">Maak een Aanpasbare Offerte</button>
 
         <!-- The Modal -->
@@ -72,7 +94,7 @@
             </div>
         </div>
 
-pijs per vierkante meter en extra opties toevoegen
+
     </main>
 
     <footer></footer>

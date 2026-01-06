@@ -23,6 +23,7 @@ body {
     color: #333;
     background: linear-gradient(to top, green, orange, yellow);
     background-size: 400% 400%;
+    background-attachment: fixed;
     animation: wave 15s ease-in-out infinite;
 }
 
@@ -153,6 +154,92 @@ div.WinterPakket {
     background-color: darkgreen;
 }
 
+/* Login form styles */
+#loginForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#loginForm label {
+    margin-top: 10px;
+}
+
+#loginForm input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#loginForm button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#loginForm button:hover {
+    background-color: darkgreen;
+}
+
+/* Button styling for AdminLogin, FormOfferte, and logoutBtn */
+#AdminLogin, #FormOfferte, #logoutBtn {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px;
+    align-items: center;
+}
+
+#AdminLogin {
+    margin-top: -5px;
+}
+
+#FormOfferte {
+    display: block;
+    margin: 10px auto;
+}
+
+#logoutBtn {
+    float: right;
+    margin-top: -5px;
+}
+
+#AdminLogin:hover, #FormOfferte:hover, #logoutBtn:hover {
+    background-color: darkgreen;
+}
+
+/* Logout modal button styles */
+#confirmLogout, #cancelLogout {
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 5px;
+}
+
+#confirmLogout:hover, #cancelLogout:hover {
+    background-color: darkgreen;
+}
+
+#cancelLogout {
+    background-color: gray;
+}
+
+#cancelLogout:hover {
+    background-color: darkgray;
+}
+
 /* Mobile responsiveness - single column on smaller screens */
 @media (max-width: 768px) {
     .packages-grid {
@@ -185,3 +272,4 @@ div.WinterPakket {
     max-width: 400px;
     margin: 20px auto;
 }
+

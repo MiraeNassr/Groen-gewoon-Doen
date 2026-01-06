@@ -6,12 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Pagina</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="JS/admin.js" defer></script>
 </head>
 
 <body>
     <header>
-        <button>Log Out</button>
+        <button id="logoutBtn">Log Out</button>
     </header>
+
+    <!-- Logout Modal -->
+    <div id="logoutModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="logoutClose">&times;</span>
+            <h2>Confirm Logout</h2>
+            <p>Are you sure you want to log out?</p>
+            <button id="confirmLogout">Yes, Log Out</button>
+            <button id="cancelLogout">Cancel</button>
+        </div>
+    </div>
 
     <main>
         <h1>Welkom op de Admin Pagina</h1>
